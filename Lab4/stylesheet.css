@@ -1,0 +1,128 @@
+.header{
+width: 70%;
+height: 50px;
+background: #b2d3c2;
+margin: auto;
+display: flex;
+align-items: center;
+font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.header h3{
+
+    margin-left: 10px;
+}
+ 
+.formdiv{
+
+    border: 1px solid black;
+    height: 500px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+footer{
+
+   width: 70%;
+   height: 40px;
+   background-color: darkgray;
+   margin: auto; 
+   display: flex;
+   align-items: center;
+
+   
+}
+
+#moreoption{
+
+    margin-left: 20%;
+}
+
+#formleftdiv input[type=text],textarea
+{
+     margin-left: 160px;
+     margin-bottom: 20px;
+     width: 165px;
+}
+
+#formleftdiv select{
+
+
+    width: 170px;
+    margin-bottom: 20px;
+}
+
+#formrightdiv input[type=text],#formrightdiv select
+{
+     margin-left: 150px;
+     margin-bottom: 20px;
+     width: 170px;
+}
+
+input[type="checkbox"]{
+   margin-left: 65%;
+}
+
+#taaddress{
+
+    width: 200px;
+    height: 100px;
+}
+
+#formleftdiv{
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+#formrightdiv{
+
+    float: right;
+    margin-left: 70px;
+    justify-content: space-between;
+
+    
+}
+
+
+.left{
+    display: flex;
+    justify-content: space-between;
+
+}
+.right{
+    display: flex;
+   
+    justify-content: space-between;
+
+}
+
+
+#formleftdiv span{
+    color: #8D021F;
+}
+
+button{
+
+    background: #b2d3c2;
+   
+}
+
+footer span{
+
+   margin: auto;
+}
+#validator{
+
+    width: 70%;
+    height: 40px;
+    background-color: darkgray;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+
+}
