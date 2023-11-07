@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  
     <div class="container">
         <div class="header">
             <h3>Workshop registration</h3>
@@ -22,7 +23,7 @@
             </span>
 
         </div>
-
+        <form action="">
         <div class="formdiv">
 
 
@@ -31,12 +32,12 @@
 
                 <div  class="left">
                     <label>First Name <span>*</span></label>
-                    <input type="text" name="fname">
+                    <input type="text" name="fname" required>
                 </div>
                 
                 <div id="lName"  class="left">
                     <label>Last Name <span>*</span></label>
-                    <input type="text" name="lname">
+                    <input type="text" name="lname" required>
                 </div>
                 
                 <div id="company"  class="left">
@@ -44,9 +45,9 @@
                     <input type="text" name="company">
                 </div>
                 
-               <div id="address"  class="left">
+               <div id="address"  class="left" >
                     <label>Address <span>*</span></label>
-                    <textarea name="taaddress"></textarea>
+                    <textarea name="taaddress" required></textarea>
                 </div>
 
                 <div id="city" class="left">
@@ -129,7 +130,8 @@
                     <input type="text" name="tbpayableat">
                 </div>
             </div>
-
+          </div>
+          </form>
 
         </div>
 
