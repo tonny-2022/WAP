@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script type="text/javascript">
+
+        let animal={
+        eats:true
+         
+        };
+        let rabit={
+        jump:true
+         
+        };
+        const rabits=Object.create(animal);
+        rabits.jump=true;
+        console.log(rabit);
+        console.log("*********************************");
+        
+        let animal1={
+        eats:true,
+        walk:function(){
+           console.log("Animal walking...") ;
+        }
+        };
+
+        let rabit1={
+        jump:true
+         
+        };
+        rabit1=Object.create(animal1);
+        rabit1.jump=true;
+
+        rabit1.walk();
+        console.log(rabit1);
+
+        console.log("*********************************");
+
+
+        animal3={
+            walk:function(){
+                if(!this.isSleeping){
+                   console.log('animal walking');
+                }
+            },
+
+            sleep:function(){
+
+                this.isSleeping=true;
+            }
+   
+        };
+
+        let rabit3=Object.create(animal3);
+        rabit3.name='White Rabit';
+        rabit3.sleep();
+        animal3.sleep();
+        console.log(rabit3.isSleeping);
+        console.log(animal3.isSleeping);
+
+        console.log("*********************************");
+
+        let arr=["one","two","three","four"];
+
+        for(let i=0;i<arr.length;i++){
+
+          console.log(arr[i]);
+        }
+
+        for(let i of arr){
+
+          console.log(i);
+        }
+
+        
+        console.log("************Loop through an object***********");
+
+        student={
+             Id:"001",
+             name:"Tonny"
+
+        };
+
+        for(let p in student){
+           console.log(p,student[p]);
+        }
+
+
+        console.log("************use own property method***********");
+        let animal4={
+           speed:"45 km/h",
+           eats:true
+
+        };
+
+        let rabit4=Object.create(animal);
+        rabit4.weight="19 kg";
+
+        for(let p in rabit4){
+            if(rabit4.hasOwnProperty(p)){
+             console.log("Own property"+" "+rabit4[p]);
+            }
+            else{
+                console.log("General property",p,rabit4[p]);
+            }
+
+        }
+
+     </script>
+
+</head>
+<body>
+    
+</body>
+</html>
