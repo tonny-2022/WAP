@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <script type="text/javascript">
+
+   
+
+       window:name1="tonny";
+       var fn= function() {
+                
+                console.log("Hello, " + this.name1 + "!");
+            }
+
+        var person = {
+            name1: "John",
+            greet1:fn 
+        };
+
+        var greetFunction = person.greet1;
+        greetFunction();
+
+        
+       
+       
+ 
+
+        function showName() {
+    console.log(this.name);
+}
+
+function showName() {
+    console.log(this.name);
+}
+
+var obj1 = { name: "Alice", showName: showName };
+var obj2 = { name: "Bob", showName: showName };
+
+obj1.showName();
+obj2.showName();
+
+       
+      
+
+     </script>
+
+</head>
+<body>
+    
+</body>
+</html>

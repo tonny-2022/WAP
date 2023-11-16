@@ -6,7 +6,7 @@
     <title>Document</title>
      <script type="text/javascript">
 
-        let animal={
+       /* let animal={
         eats:true
          
         };
@@ -106,7 +106,34 @@
                 console.log("General property",p,rabit4[p]);
             }
 
-        }
+        }*/
+ 
+    
+       let user = {
+            firstName: "John",
+            sayHi() {
+            console.log(`Hello, ${this.firstName}!`);
+            }
+            };
+          setTimeout(user.sayHi(),1000);
+
+          /*function greeting() {
+            console.log(this);
+            }
+
+            let user = {
+            
+            firstName: "John",
+            sayHi() {
+            console.log(this);
+            }
+
+           
+            };
+            console.log(this); // this is window object
+            greeting();
+            user.sayHi();*/
+
 
      </script>
 
