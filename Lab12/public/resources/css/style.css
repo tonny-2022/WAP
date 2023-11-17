@@ -1,0 +1,27 @@
+
+
+#productForm{
+  background-color: bisque;
+  margin-left: 20%;
+  height: auto;
+  width: 300px;
+}
+
+#errormsg{
+  color: red;
+  width: 600px;
+  height: 100px;
+  background-color:beige;
+  font-size: 60px solid;
+  margin-left: 30%;
+  text-align: center;
+}
+#home{
+  color: red;
+  width: 600px;
+  height: 100px;
+  background-color:beige;
+  font-size: 60px solid;
+  margin-left: 30%;
+  text-align: center;
+}
