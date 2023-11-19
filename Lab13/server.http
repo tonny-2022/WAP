@@ -1,0 +1,30 @@
+GET http://localhost:3000/books
+###
+GET http://localhost:3000/books/1
+
+###
+POST http://localhost:3000/books 
+Content-type: application/json
+
+{
+
+    "title": "How to Get",
+    "ISBN": "234-778-7856",
+    "publishDate": "30-11-2000",
+    "author": "Hope"
+}
+
+###
+DELETE  http://localhost:3000/books/2
+
+###
+PUT  http://localhost:3000/books/1
+Content-type: application/json
+
+  {
+    "title":"The right call1",
+    "ISBN":"234-778-991",
+    "publishDate":"15-11-1993",
+    "author":"Sally jenkinsss"
+ }
+ 
